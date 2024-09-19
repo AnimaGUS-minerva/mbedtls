@@ -208,6 +208,7 @@ EXCLUDE_FROM_FULL = frozenset([
     'MBEDTLS_TEST_CONSTANT_FLOW_MEMSAN', # build dependency (clang+memsan)
     'MBEDTLS_TEST_CONSTANT_FLOW_VALGRIND', # build dependency (valgrind headers)
     'MBEDTLS_X509_REMOVE_INFO', # removes a feature
+    'MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS',     # requires mbedtls_psa_platform_get_builtin_key to be defined.
 ])
 
 def is_seamless_alt(name):
